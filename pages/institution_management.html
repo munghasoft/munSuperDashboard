@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER ADMIN DASHBOARD</title>
+
+    <!-- ================ boxicons ============== -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ================ Custom css ============== -->
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+
+    <div class="main-app">
+
+        <!-- ======== SIDEBAR ==================== -->
+         
+        <aside class="sidebar">
+
+            <button class="sidebar-close">
+                    
+                <i class="bx bx-x"></i>
+                        
+            </button>
+        
+            <div class="brand">
+
+                <div class="brand-log">M</div>
+
+                <div class="brand-text">
+
+                    <span>MunEduStack</span>
+                    <span>System</span>
+
+                </div>
+
+            </div>
+
+            <!-- ========   nav-links ==================== -->
+
+            <nav class="sidebar-nav">
+
+                <a href="#" class="nav-item active">
+                    <span class="nav-icon"><i class="bx bx-home" ></i></span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="bx bx-cart-alt"></i></span>
+                    <span>Institution Management</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="bx bx-user"></i></span>
+                    <span>User Administration</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="bx bx-bone"></i></span>
+                    <span>Sysrem Health</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="bx bx-home" ></i></span>
+                    <span>Licenses & Billing</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="bx bx-book-bookmark"></i></span>
+                    <span>Audit logs</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="nav-icon"><i class="bx bx-cog" ></i></span>
+                    <span>Settings</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- ========   MAIN CONTENT ==================== -->
+
+        <maim class="main-content">
+
+            <!-- ======== TOP HEADER ==================== -->
+
+            <header class="top-header">
+
+                <div class="header-left">
+
+                    <button class="sidebar-toggle" id="sidebarToggle">
+                        <i class="bx bx-menu"></i>
+                    </button>
+
+                    <div class="header-title">
+                        <h1>Super Administrator Control Panel- System Overview</h1>
+                    </div>
+                </div>
+
+                <div class="header-right">
+
+                    <button class="notification-btn" id="notificationBtn">
+                        <i class="bx bx-bell"></i>
+                    </button>
+
+                    <div class="notification-panel">
+                        
+                    </div>
+
+                    <div class="admin-avatar">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- ======== INSTITUTION MANAGEMENT CARDS ==================== -->
+
+            <section class="page-content">
+
+                <section class="dashboard">
+
+                    <div class="dashboard-grid">
+
+                        <article class="kpi-card">
+
+                            <div class="kpi-card-top">
+
+                                <span>Total Institutions</span>
+                                <span class="kpi-icon"><i class="bx bx-trending-up" ></i></span>
+                            </div>
+
+                            <strong class="kpi-value">450</strong>
+                            <span class="kpi-change"><i class="bx bx-trending-up" ></i> 12%</span>
+
+                        </article>
+
+                        <article class="kpi-card">
+
+                            <div class="kpi-card-top">
+
+                                <span>Active Users</span>
+                                <span class="kpi-icon"><i class="bx bx-trending-up" ></i></span>
+                            </div>
+
+                            <strong class="kpi-value">12,500</strong>
+                            <span class="kpi-change"><i class="bx bx-trending-up" ></i>8.4 %</span>
+
+                        </article>
+
+                        <article class="kpi-card">
+
+                            <div class="kpi-card-top">
+
+                                <span>System Uptime</span>
+                                <span class="kpi-icon"><i class="bx bx-check"></i></span>
+                            </div>
+
+                            <strong class="kpi-value">99.98%</strong>
+                            <span class="kpi-change"><i class="bx bx-check"></i></span>
+
+                        </article>
+
+                        <article class="kpi-card">
+
+                            <div class="kpi-card-top">
+
+                                <span>Pending Support Tickets</span>
+                                <span class="kpi-icon"><i class="bx bx-trending-up" ></i></span>
+                            </div>
+
+                            <strong class="kpi-value">12</strong>
+                            <span class="kpi-change"></span>
+
+                        </article>    
+                                                
+                    </div>
+
+                </section>
+
+            </section>
+
+        </maim>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="../scripts/admin.js"></script>
+    <script src="../scripts/chart.js"></script>
+    
+</body>
+</html>
