@@ -631,3 +631,18 @@ navItems.forEach(function(link) {
         link.classList.add("active");
     });
 });
+
+// CLICKING THE NAV ITEM CLOSES THE SIDEBAR
+
+const sidebarNavItems = document.querySelectorAll(".sidebar-nav .nav-item");
+
+sidebarNavItems.forEach(function(navItem) {
+    
+    navItem.addEventListener("click", () => {
+
+        if (window.innerWidth <= 1024) {
+
+            sidebar.classList.remove("sidebar-open");
+        }
+    });
+});
